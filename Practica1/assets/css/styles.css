@@ -1,0 +1,97 @@
+/* Color 1 - Fondo de la página */
+body {
+    background-color: #44FFD1;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Contenedor principal */
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Color 2 - Fondo del header y la barra de navegación */
+header {
+    background-color: #6153CC;
+    padding: 20px;
+}
+
+/* Color 3 - Fondo de los botones/enlaces */
+.nav-link, .button {
+    background-color: #A60067;
+    color: #44FFD1;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+/* Color 4 - Color del texto */
+h1, p {
+    color: #44FFD1;
+}
+
+/* Color 5 - Bordes y hover */
+.nav-link:hover, .button:hover {
+    background-color: #360A14;
+    color: white;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #6153CC;
+}
+.contacto {
+    color: #961D4E;
+    text-decoration: none;
+}
+.contacto:hover {
+    color: #360A14;
+}
+
+h2 {
+    color: #C41E3D;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+ol {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    font-size: 20px;
+    font-style: italic;
+    color: #7D1128;
+    padding: 15px;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+li img {
+    width: 80%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 8px #FF2C55;
+    transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+    color: #3C0919;
+    transform: scale(1.05);
+}
+
+li img:hover {
+    transform: scale(1.1);
+}

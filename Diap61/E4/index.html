@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mayor en un arreglo</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./js/script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Encuentra la posición del número mayor</h1>
+    
+    <label for="cantidad">¿Cuántos números quieres ingresar?</label>
+    <input type="number" id="cantidad" min="1" />
+    <button onclick="crearCampos()">Generar campos</button>
+    
+    <form id="numerosForm" class="oculto">
+      <div id="inputsContainer"></div>
+      <button type="button" onclick="encontrarMayor()">Encontrar mayor</button>
+    </form>
+
+    <p id="resultado"></p>
+  </div>
+  <a href="../index.html" class="nav-link">Volver a Ejercicios</a>
+</body>
+</html>

@@ -1,0 +1,70 @@
+/* COLOR 1: Fondo general */
+body {
+    background-color: #D4C5E2;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  /* COLOR 2: Contenedor principal */
+  .container {
+    background-color: #C9D7F8;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 320px;
+  }
+  
+  /* COLOR 3: Encabezado */
+  h1 {
+    color: #4C6663;
+    margin-bottom: 20px;
+  }
+  
+  /* COLOR 4: Resultado de la tabla */
+  #tablaResultado {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+  }
+  
+  #tablaResultado li {
+    color: #80CFA9;
+    font-size: 18px;
+    padding: 4px 0;
+  }
+  
+  /* COLOR 5: Botón */
+  button {
+    background-color: #4C6663;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Input */
+  input[type="number"] {
+    padding: 10px;
+    font-size: 16px;
+    width: 80%;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 12px;
+    outline: none;
+  }
+  

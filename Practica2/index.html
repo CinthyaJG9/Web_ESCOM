@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica 2 - Ejercicios JavaScript</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        .section {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            padding: 20px;
+            margin-bottom: 30px;
+        }
+        
+        h1, h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        
+        h1 {
+            text-align: center;
+            color: #3498db;
+        }
+        
+        #holas-container, #sumatoria-container {
+            padding: 15px;
+            background-color: #f5f5f5;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+        
+        .resultado {
+            font-weight: bold;
+            color: #e74c3c;
+            font-size: 1.2em;
+        }
+        
+        table {
+            border-collapse: collapse;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 100%;
+            margin: 20px 0;
+        }
+        
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            min-width: 40px;
+        }
+        
+        th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+        
+        td:first-child, th:first-child {
+            background-color: #2980b9;
+            color: white;
+            font-weight: bold;
+        }
+        
+        .title {
+            background-color: #3498db;
+            color: white;
+            font-size: 1.2em;
+        }
+        
+        .saludo {
+            color: #2ecc71;
+            font-weight: bold;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Práctica 2 - Ejercicios JavaScript</h1>
+    
+    <div class="section">
+        <h2>1. Bucle de Saludos</h2>
+        <div id="holas-container"></div>
+    </div>
+    
+    <div class="section">
+        <h2>2. Sumatoria de los primeros 100 números</h2>
+        <div id="sumatoria-container"></div>
+    </div>
+    
+    <div class="section">
+        <h2>3. Tablas de Multiplicar</h2>
+        <table id="multiplicationTable"></table>
+    </div>
+
+    <script>
+        // 1. Bucle de saludos
+        const holasContainer = document.getElementById('holas-container');
+        for(let i = 1; i <= 10; i++) {
+            const saludo = document.createElement('p');
+            saludo.innerHTML = `<span class="saludo">Hola</span> ${i}`;
+            holasContainer.appendChild(saludo);
+        }
+        
+        // 2. Sumatoria de los primeros 100 números
+        const sumatoriaContainer = document.getElementById('sumatoria-container');
+        let suma = 0;
+        for(let j = 1; j <= 100; j++) {
+            suma += j;
+        }
+        sumatoriaContainer.innerHTML = `
+            <p>La sumatoria de los primeros 100 números naturales es:</p>
+            <p class="resultado">${suma}</p>
+            <p>Fórmula matemática: Σ (n) desde n=1 hasta 100 = n(n+1)/2 = ${100*(100+1)/2}</p>
+        `;
+        
+        // 3. Tabla de multiplicar
+        document.addEventListener('DOMContentLoaded', function() {
+            const table = document.getElementById('multiplicationTable');
+            const size = 9; // Columnas del 1 al 9
+            const rows = 9;  // Filas del 2 al 10
+
+            const titleRow = table.insertRow();
+            const titleCell = titleRow.insertCell();
+            titleCell.colSpan = size + 1;
+            titleCell.textContent = 'TABLAS DE MULTIPLICAR';
+            titleCell.className = 'title';
+
+            const headerRow = table.insertRow();
+            const headerFirstCell = headerRow.insertCell();
+            headerFirstCell.textContent = 'FILA × COLUMNA';
+            
+            for (let col = 1; col <= size; col++) {
+                const th = headerRow.insertCell();
+                th.textContent = col;
+            }
+
+            for (let row = 2; row <= rows + 1; row++) {
+                const tr = table.insertRow();
+                const firstCell = tr.insertCell();
+                firstCell.textContent = row;
+                
+                for (let col = 1; col <= size; col++) {
+                    const td = tr.insertCell();
+                    td.textContent = row * col;
+                }
+            }
+        });
+    </script>
+</body>
+</html>

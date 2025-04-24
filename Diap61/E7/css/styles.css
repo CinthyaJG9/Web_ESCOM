@@ -1,0 +1,71 @@
+/* Estilo "mbau": líneas limpias, formas geométricas, colores vibrantes y contraste marcado */
+
+/* COLOR 1: Fondo general */
+body {
+    background-color: #F9E0D9;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px;
+  }
+  
+  /* COLOR 2: Contenedor principal */
+  .container {
+    background-color: #E6DBD0;
+    padding: 35px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 8px 8px 0px #COLOR5;
+    border: 3px solid #COLOR3;
+  }
+  
+  /* COLOR 3: Título */
+  h1 {
+    color: #7D6167;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 25px;
+  }
+  
+  /* COLOR 4: Campos de entrada */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #754F5B;
+    border-radius: 10px;
+    margin: 15px 0;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  /* COLOR 5: Botón */
+  button {
+    width: 100%;
+    background-color: #5D4954;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #7D6167;
+    color: #000;
+  }
+  
+  #resultado {
+    margin-top: 25px;
+    font-size: 16px;
+    color: #7D6167;
+    line-height: 1.6;
+    text-align: center;
+  }
+  

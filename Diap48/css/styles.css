@@ -1,0 +1,61 @@
+/* Color 1 - Fondo de la página */
+body {
+    background-color: #EF767A;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal con efecto isométrico */
+.container {
+    background-color: #456990;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px #49BEAA; /* Efecto isométrico */
+    transform: skewY(-5deg);
+    text-align: center;
+}
+
+/* Botón con efecto 3D */
+button {
+    background-color: #49DCB1;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 5px 5px 0px #EEB868;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 8px 8px 0px #EEB868;
+}
+
+/* Texto de resultados */
+h2 {
+    color: #EEB868;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+h3 {
+    color: #49BEAA;
+    font-size: 22px;
+}
+
+/* Lista de pares */
+.pares-container {
+    background-color: #EF767A;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 20px;
+    box-shadow: 5px 5px 0px #49DCB1;
+}

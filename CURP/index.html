@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Generador CURP Simplificado</title>
+  <script src="./js/script.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Generador parcial de CURP</h1>
+    <form id="curpForm">
+      <input type="text" id="nombre" placeholder="Nombre(s)" required />
+      <input type="text" id="apellidoP" placeholder="Apellido paterno" required />
+      <input type="text" id="apellidoM" placeholder="Apellido materno" required />
+      <input type="date" id="fechaNac" required />
+      <select id="sexo" required>
+        <option value="">Selecciona sexo</option>
+        <option value="H">Hombre</option>
+        <option value="M">Mujer</option>
+      </select>
+      <select id="estado" required>
+        <option value="">Estado de nacimiento</option>
+        <option value="DF">CDMX</option>
+        <option value="MC">Edo. de México</option>
+        <option value="JA">Jalisco</option>
+        <option value="NL">Nuevo León</option>
+        <option value="BC">Baja California</option>
+        <option value="QR">Quintana Roo</option>
+        <option value="SO">Sonora</option>
+        <option value="CH">Chihuahua</option>
+        <option value="GR">Guerrero</option>
+        <option value="TA">Tabasco</option>
+        <option value="VE">Veracruz</option>
+        <option value="ZA">Zacatecas</option>
+        <option value="TL">Tlaxcala</option>
+        <option value="PU">Puebla</option>
+        <option value="HG">Hidalgo</option>
+        <option value="MI">Michoacán</option>
+        <option value="CO">Colima</option>
+        <option value="NA">Nayarit</option>
+        <option value="SL">San Luis Potosí</option>
+        <option value="AG">Aguascalientes</option>
+        <option value="QR">Querétaro</option>
+        <option value="EM">Campeche</option>
+        <option value="SI">Sinaloa</option>
+        <option value="TL">Tlaxcala</option>
+        <option value="YU">Yucatán</option>
+        <option value="BC">Baja California Sur</option>
+        <option value="AS">Durango</option>
+        <option value="NE">Nayarit</option>
+        <option value="ZA">Zacatecas</option>
+        <option value="CH">Chiapas</option>
+        <option value="MI">Michoacán</option>
+        <option value="CO">Coahuila</option>
+      </select>
+      <button type="submit">Generar CURP</button>
+    </form>
+
+    <div class="resultado" id="resultado"></div>
+    <a href="../Practica1/index.html" class="nav-link">Home</a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

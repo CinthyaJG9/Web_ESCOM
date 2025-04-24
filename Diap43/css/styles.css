@@ -1,0 +1,74 @@
+/* Color 1 - Fondo de la página */
+body {
+    background-color: #352208;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Contenedor principal */
+h2 {
+    color: #E1BB80;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Color 3 - Texto de etiquetas */
+label {
+    font-size: 18px;
+    color: #7B6B43;
+    font-weight: 500;
+    display: block;
+    margin: 10px 0 5px;
+}
+
+/* Inputs de números */
+input {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #685634;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s;
+}
+
+/* Efecto cuando el input está en foco */
+input:focus {
+    border-color: #E1BB80;
+    box-shadow: 0px 0px 8px #E1BB80;
+}
+
+/* Botón con estilo flat */
+button {
+    background-color: #806443;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+/* Efecto hover en el botón */
+button:hover {
+    background-color: #E1BB80;
+}
+
+/* Resultado */
+h3 {
+    font-size: 22px;
+    color: #E1BB80;
+    margin-top: 20px;
+}
+
+span#resultado {
+    font-weight: bold;
+    color: #685634;
+    font-size: 24px;
+}

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Suma de Vectores</title>
+  <script src="./js/script.js" defer></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Suma de dos vectores</h1>
+
+    <label for="cantidad">Número de elementos:</label>
+    <input type="number" id="cantidad" min="1">
+    <button onclick="crearVectores()">Generar vectores</button>
+
+    <form id="vectoresForm" class="oculto">
+      <h2>Vector A</h2>
+      <div id="vectorA"></div>
+      <h2>Vector B</h2>
+      <div id="vectorB"></div>
+      <button type="button" onclick="sumarVectores()">Sumar vectores</button>
+    </form>
+
+    <div id="resultado"></div>
+    <a href="../index.html" class="nav-link">Volver a Ejercicios</a>
+  </div>
+</body>
+</html>

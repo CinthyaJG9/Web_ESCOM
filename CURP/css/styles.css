@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #020202;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* COLOR 2: Fondo del contenedor */
+  .container {
+    background-color: #503B31;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+  }
+  
+  /* COLOR 3: Título */
+  h1 {
+    color: #705D56;
+    margin-bottom: 20px;
+  }
+  
+  /* Entradas y selects */
+  input, select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1em;
+  }
+  
+  /* COLOR 4: Botón */
+  button {
+    background-color: #9097C0;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #705D56;
+  }
+  
+  /* COLOR 5: Resultado */
+  .resultado {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #A7BBEC;
+  }
+  

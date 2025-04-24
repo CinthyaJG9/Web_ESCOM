@@ -1,0 +1,49 @@
+/* COLOR 1: Fondo general */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2DE1FC;
+    font-family: 'Orbitron', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* COLOR 2: Fondo del contenedor principal */
+.container {
+    background-color: #2AFC98;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px #09E85E;
+    max-width: 600px;
+    width: 90%;
+    text-align: center;
+}
+
+/* COLOR 3: Título principal */
+h1 {
+    color: #09E85E;
+    margin-bottom: 30px;
+    font-size: 28px;
+}
+
+/* COLOR 4: Estilo de los enlaces */
+.links a {
+    display: block;
+    text-decoration: none;
+    color: #16C172;
+    background-color: #214F4B;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    font-weight: bold;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Hover para los enlaces */
+.links a:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 15px #09E85E;
+}

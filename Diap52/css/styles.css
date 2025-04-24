@@ -1,0 +1,66 @@
+/* Color 1 - Fondo de la página */
+body {
+    background-color: #7A7265;
+    font-family: 'Comic Sans MS', 'Handwritten', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor principal con efecto de boceto */
+.container {
+    background-color: #C0B7B1;
+    padding: 30px;
+    border-radius: 15px;
+    border: 4px dashed #8E6E53; /* Borde tipo boceto */
+    text-align: center;
+    box-shadow: 5px 5px 0px #C69C72;
+}
+
+/* Botón con efecto de dibujo */
+button {
+    background-color: #433E3F;
+    color: white;
+    border: 3px solid #8E6E53;
+    padding: 12px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 3px 3px 0px #C69C72;
+    font-family: 'Comic Sans MS', cursive;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 0px #C69C72;
+}
+
+/* Títulos con estilo a mano alzada */
+h2 {
+    color: #433E3F;
+    font-size: 28px;
+    font-weight: bold;
+    text-decoration: underline;
+    text-shadow: 2px 2px #8E6E53;
+}
+
+h3 {
+    color: #C69C72;
+    font-size: 22px;
+    font-style: italic;
+}
+
+/* Lista de pares */
+.pares-container {
+    background-color: #7A7265;
+    padding: 15px;
+    border-radius: 5px;
+    border: 3px dotted #8E6E53;
+    margin-top: 20px;
+    box-shadow: 3px 3px 0px #433E3F;
+}

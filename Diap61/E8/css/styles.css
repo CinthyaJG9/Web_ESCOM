@@ -1,0 +1,69 @@
+
+/* COLOR 1: Fondo general */
+body {
+    background-color: #FFD9DA;
+    font-family: 'Quicksand', sans-serif;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+  
+  /* COLOR 2: Fondo del contenedor */
+  .container {
+    background-color: #EA638C;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 2px solid #89023E;
+  }
+  
+  /* COLOR 3: Títulos */
+  h1, h2 {
+    text-align: center;
+    color: #89023E;
+    margin-bottom: 20px;
+  }
+  
+  /* COLOR 4: Entrada de texto */
+  input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0 20px 0;
+    border: 1.5px solid #30343F;
+    border-radius: 12px;
+    font-size: 16px;
+    background-color: #fff;
+  }
+  
+  /* COLOR 5: Botón */
+  button {
+    width: 100%;
+    background-color: #1B2021;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600;
+  }
+  
+  button:hover {
+    background-color: #89023E;
+    color: #000;
+  }
+  
+  /* Resultado */
+  #resultado {
+    margin-top: 25px;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  

@@ -1,0 +1,104 @@
+mysql> crear basededatos;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'crear basededatos' at line 1
+mysql> create database 4BM2;
+Query OK, 1 row affected (0.16 sec)
+
+mysql> use 4bm2
+Database changed
+mysql> create table if not exist Categoria(
+    -> idCategoria int not null auto_increment primary key,
+    -> nombreCategoria varchar(50) not null,
+    -> descripcionCategoria varchar(200) not null);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'exist Categoria(
+idCategoria int not null auto_increment primary key,
+nombreCate' at line 1
+mysql> create table if not exists Categoria(
+    -> idCategoria int not null auto_increment primary key,
+    -> nombreCategoria varchar(50) not null,
+    -> descripcionCategoria varchar(200) not null);
+Query OK, 0 rows affected (1.46 sec)
+
+mysql> create table if not exists Articulo(
+    -> idArticulo int not null auto_increment primary key,
+    -> nombreArticulo varchar (50) not null,
+    -> descripcionArticulo  varchar(200) not null,
+    -> precio double not null,
+    -> existencias int not null,
+    -> idCategoria int,
+    -> foreign key(idCategoria) references Categoria(idCategoria) on update cascade on delete cascade);
+Query OK, 0 rows affected (0.31 sec)
+
+mysql> show tables;
++----------------+
+| Tables_in_4bm2 |
++----------------+
+| articulo       |
+| categoria      |
++----------------+
+2 rows in set (0.62 sec)
+
+mysql> desc Categoria;
++----------------------+--------------+------+-----+---------+----------------+
+| Field                | Type         | Null | Key | Default | Extra          |
++----------------------+--------------+------+-----+---------+----------------+
+| idCategoria          | int          | NO   | PRI | NULL    | auto_increment |
+| nombreCategoria      | varchar(50)  | NO   |     | NULL    |                |
+| descripcionCategoria | varchar(200) | NO   |     | NULL    |                |
++----------------------+--------------+------+-----+---------+----------------+
+3 rows in set (0.32 sec)
+
+mysql> describe Articulo;
++---------------------+--------------+------+-----+---------+----------------+
+| Field               | Type         | Null | Key | Default | Extra          |
++---------------------+--------------+------+-----+---------+----------------+
+| idArticulo          | int          | NO   | PRI | NULL    | auto_increment |
+| nombreArticulo      | varchar(50)  | NO   |     | NULL    |                |
+| descripcionArticulo | varchar(200) | NO   |     | NULL    |                |
+| precio              | double       | NO   |     | NULL    |                |
+| existencias         | int          | NO   |     | NULL    |                |
+| idCategoria         | int          | YES  | MUL | NULL    |                |
++---------------------+--------------+------+-----+---------+----------------+
+6 rows in set (0.00 sec)
+
+mysql> insert into Categoria(nombreCategoria, descripcionCategoria) values ('Electr¢nica', 'Art de Electr¢nica);
+    '> insert into Categoria(nombreCategoria, descripcionCategoria) values ('Electr¢nica', 'Art de Electr¢nica');
+    '> ^C
+mysql> insert into Categoria(nombreCategoria, descripcionCategoria) values ('Electr¢nica', 'Art de Electr¢nica');
+Query OK, 1 row affected (0.17 sec)
+
+mysql> insert into Categoria(nombreCategoria, descripcionCategoria) values ('Deportes', 'Art Deportivos');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> select * from Categoria;
++-------------+-----------------+----------------------+
+| idCategoria | nombreCategoria | descripcionCategoria |
++-------------+-----------------+----------------------+
+|           1 | Electr¢nica     | Art de Electr¢nica   |
+|           2 | Deportes        | Art Deportivos       |
++-------------+-----------------+----------------------+
+2 rows in set (0.00 sec)
+
+mysql> select * from Categoria where idCategoria=2;
++-------------+-----------------+----------------------+
+| idCategoria | nombreCategoria | descripcionCategoria |
++-------------+-----------------+----------------------+
+|           2 | Deportes        | Art Deportivos       |
++-------------+-----------------+----------------------+
+1 row in set (0.04 sec)
+
+mysql> insert into Categoria(nombreCategoria, descripcionCategoria) values ('L¡nea Blanca', 'Art de L¡nea Blanca');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> delete from Categoria where idCategoria=2;
+Query OK, 1 row affected (0.08 sec)
+
+mysql> select * from Categoria;
++-------------+-----------------+----------------------+
+| idCategoria | nombreCategoria | descripcionCategoria |
++-------------+-----------------+----------------------+
+|           1 | Electr¢nica     | Art de Electr¢nica   |
+|           3 | L¡nea Blanca    | Art de L¡nea Blanca  |
++-------------+-----------------+----------------------+
+2 rows in set (0.00 sec)
+
+mysql> Terminal close -- exit!
